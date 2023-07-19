@@ -2,6 +2,7 @@
 <ModMetaData>
 	<name>TextureReload</name>
 	<author>erdelf</author>
-	<supportedVersions><li>1.0</li></supportedVersions>
+	<supportedVersions><li>1.4</li></supportedVersions>
+	<packageId>erdelf.TextureReload</packageId>
 	<description>Reload all textures of things with a button at the end of the dev mode action menu</description>
 </ModMetaData>

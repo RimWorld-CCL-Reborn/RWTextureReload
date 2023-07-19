@@ -8,6 +8,7 @@ using Verse;
 
 namespace TextureReload
 {
+    /*
     //  [StaticConstructorOnStartup]
     // This class does not work yet...
     public static class TextureReloadV2
@@ -69,5 +70,5 @@ namespace TextureReload
                 });
                 Log.Message(graphics.Count + " " + graphicData.Count);
             })).GetValue();
-    }
+    }*/
 }
