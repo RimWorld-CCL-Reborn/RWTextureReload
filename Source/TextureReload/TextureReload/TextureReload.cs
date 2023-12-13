@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Harmony;
 using UnityEngine;
 using Verse;
 
 namespace TextureReload
 {
     using System.IO;
+    using HarmonyLib;
 
     [StaticConstructorOnStartup]
     public static class TextureReload
@@ -34,7 +34,7 @@ namespace TextureReload
                                             {
                                                 Traverse                    textureInfo = Traverse.Create(current).Field("textures");
                                                 ModContentHolder<Texture2D> textures    = textureInfo.GetValue<ModContentHolder<Texture2D>>();
-                                                textures.contentList.Clear();
+                                                textures.ClearDestroy();
                                                 textures.ReloadAll();
                                                 textureInfo.SetValue(textures);
 
